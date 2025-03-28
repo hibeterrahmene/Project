@@ -6,10 +6,16 @@ from notifications.models import Notification
 from django.contrib.auth import get_user_model
 from django.contrib.admin.views.decorators import staff_member_required
 from .models import Article
+from django.http import HttpResponse
 
 User = get_user_model()
 
 @login_required
+
+def article_list(request):
+    return HttpResponse("Liste des articles")
+
+    
 def submit_article(request):
     if request.method == 'POST':
         form = ArticleSubmissionForm(request.POST, request.FILES)
