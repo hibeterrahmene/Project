@@ -1,5 +1,15 @@
+# variable envirenment
 .env
+
+# python
 */__pycache__/
+
+# db files
 *.sqlite3
+
+# virtual env
 /env/
+/.venv/
+
+# vscode files
 .vscode/
