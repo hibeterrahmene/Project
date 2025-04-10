@@ -1,11 +1,13 @@
-#  Environment variables
+# Environment variables
 .env
 
-# python
+# compiling python files
 */__pycache__/
 
 # db files
 *.sqlite3
+db.sqlite3
+
 
 # virtual env
 /env/
